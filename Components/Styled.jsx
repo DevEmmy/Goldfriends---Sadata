@@ -126,7 +126,7 @@ export const NavStyle = styled.div`
       }
 
       .signUp{
-        display: none;
+        display: block;
       }
       
       .hamburger{

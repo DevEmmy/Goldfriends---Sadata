@@ -50,7 +50,7 @@ const Nav = ({ active = 0 }) => {
         </div>
       </div>
 
-      <div className="hamburger">
+      {/* <div className="hamburger">
         <div className="icon">
           <HiMenuAlt3 size={"30px"} onClick={showWidth}/>
         </div>
@@ -66,30 +66,12 @@ const Nav = ({ active = 0 }) => {
           <div className={active == 1 && "active"}>
             <Link href={"/about"}>About</Link>
           </div>
-          {/* <div className={active == 2 && "active"} id="services">
-            <div
-              onClick={() => {
-                setServices(!services);
-              }}
-            >
-              Our Services
-            </div>
-
-            {services && (
-              <div className="navServices">
-                <Link href="/services/ticket-booking">Ticket Booking</Link>
-                <Link href={"/services/visa-processing"}>Visa Processing</Link>
-                <Link href={"/services/real-estate"}>Real Estate</Link>
-                <Link href="/">Minning</Link>
-              </div>
-            )}
-          </div> */}
 
           <div className={active == 3 && "active"}>
             <Link href={"/contact"}>Contact Us</Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </NavStyle>
   );
 };
