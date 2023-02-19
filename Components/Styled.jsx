@@ -712,6 +712,25 @@ export const Details = styled.div`
   width: 80%;
   margin: 30px auto;
 
+  .media{
+    padding: 20px 0;
+  }
+
+  .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    img, video{
+      width: 100%;
+      height: 200px;
+    }
+
+    @media (max-width: 700px){
+      grid-template-columns: none;
+    }
+  }
+
   @media (max-width: 700px){
     width: 90%;      
   }
