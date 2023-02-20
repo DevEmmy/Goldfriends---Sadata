@@ -4,7 +4,7 @@ import { HiLocationMarker } from 'react-icons/hi';
 import Footer from '../../Components/Footer';
 import Nav from '../../Components/Nav';
 import { Banner, Details } from '../../Components/Styled';
-import {data} from "./data"
+import {data} from "../../Components/data"
 
 const property = () => {
     const router = useRouter();

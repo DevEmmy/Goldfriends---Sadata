@@ -22,10 +22,9 @@ const RealEstate = () => {
           </p>
         </div>
 
-        {/* <img
-          src="https://images.theconversation.com/files/179208/original/file-20170721-28483-1k8sy5q.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
-          alt="banner text"
-        /> */}
+        <img
+          src="https://images.unsplash.com/photo-1628116904346-44a605db3b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        />
         
       </Banner>
             <Properties />

@@ -9,13 +9,14 @@ export const Container = styled.div`
 
 export const NavStyle = styled.div`
   display: flex;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
   justify-content: space-between;
   width: 90%;
   margin: 10px auto;
   align-items: center;
   /* justify-items: center; */
   gap: 100px;
-  padding: 20px 0;
+  padding: 0px 0;
   position: absolute  ;
   top: 0;
   left: 0;
@@ -165,36 +166,38 @@ export const NavStyle = styled.div`
 
 export const Banner = styled.div`
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1.5fr 1fr;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
   width: 100%;
   padding: 0 10%;
   height: 100vh;
   margin: 0px auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(-45deg,rgba(0,0,0,0.7), rgb(0,0,0,1)), url("https://images.unsplash.com/photo-1602941525436-839a5be074ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background:white;
 
   .text {
-    color: white;
+    color: black;
     h3 {
       font-size: 3.5rem;
       padding: 10px 0px;
       font-weight: bolder;
-      width: 70%;
+      width: 100%;
+      
     }
 
     p {
       line-height: 1.5;
-      width: 70%;
+      width: 80%;
     }
   }
 
   img {
     width: 100%;
-    height: 80%;
+    height: 60%;
     border-radius: 25px;
+    margin: 50px 0;
     box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
     /* border: 10px solid white; */
   }
@@ -211,6 +214,7 @@ export const Banner = styled.div`
   }
 
   @media screen and (max-width:700px){
+    grid-template-columns: none;
 
     .text{
       h3{
@@ -222,8 +226,87 @@ export const Banner = styled.div`
         width: 100%;
       }
     }
+
+    img{
+      display: none;
+    }
     
   }
+
+  .btn-4,
+.btn-4 *,
+.btn-4 :after,
+.btn-4 :before,
+.btn-4:after,
+.btn-4:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-4 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  /* text-transform: uppercase; */
+}
+.btn-4:disabled {
+  cursor: default;
+}
+.btn-4:-moz-focusring {
+  outline: auto;
+}
+.btn-4 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-4 [hidden] {
+  display: none;
+}
+.btn-4 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-4 span {
+  mix-blend-mode: difference;
+}
+.btn-4:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+.btn-4:hover:before {
+  --progress: 100%;
+}
+
 `
 
 export const Services = styled.div`

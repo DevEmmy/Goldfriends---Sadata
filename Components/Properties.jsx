@@ -4,7 +4,7 @@ import { FaArrowRight, FaLocationArrow, FaSearchLocation } from 'react-icons/fa'
 import { HiChevronDoubleRight, HiLocationMarker } from 'react-icons/hi'
 import Cards from './Cards'
 import { PropertiesContainer } from './Styled'
-import {data} from "../pages/properties/data.js"
+import {data} from "./data.js"
 
 const Properties = () => {
     
