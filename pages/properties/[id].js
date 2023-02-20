@@ -20,8 +20,12 @@ const property = () => {
     <>
       <Nav active={2}/>
       <Banner img={property?.images[0]}>
-        <h1>{property?.title}</h1>
-        {/* <p>Testing Listings</p> */}
+        <div className="text">
+          <h3>{property?.title}</h3>
+          <p>{property?.location}</p>
+        </div>
+        
+        <img src={property?.images[0]} alt="" />
       </Banner>
 
       <Details>
@@ -74,8 +78,8 @@ const property = () => {
             <input type="tel" placeholder="090239239" />
             <textarea
               placeholder="Message"
-              defaultValue={`
-                  Hi, I am interested in De'ville at Lagos, Ikorudu
+              value={`
+                  Hi, I am interested in ${property?.title}
                 `}
             />
 

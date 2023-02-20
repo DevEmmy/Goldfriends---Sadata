@@ -11,17 +11,17 @@ export const NavStyle = styled.div`
   display: flex;
   border-bottom: 2px solid rgba(0,0,0,0.1);
   justify-content: space-between;
-  width: 90%;
-  margin: 10px auto;
+  width: 100%;
+  margin: 0px auto;
   align-items: center;
   /* justify-items: center; */
   gap: 100px;
-  padding: 0px 0;
+  padding: 10px 5%;
   position: absolute  ;
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
+  background-color: black;
   /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.09); */
 
   @media (max-width: 700px){
@@ -883,11 +883,12 @@ export const CardStyle = styled.div`
   }
 
   .enquire {
-    padding: 4px 10px;
+    padding: 8px 10px;
     border-radius: 4px;
     background-color: #2f4858;
     color: white;
-    width: fit-content;
+    text-align: center;
+    width: 100%;
     font-size: 14px;
     margin: 3px 0;
     cursor: pointer;
